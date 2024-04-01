@@ -1,0 +1,10 @@
+{
+    "name": "GSGourmetHamburger-Editor",
+    "references": [
+        "GSGourmetHamburger"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
