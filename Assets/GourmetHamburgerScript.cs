@@ -148,7 +148,7 @@ public class GourmetHamburgerScript : MonoBehaviour
                 return PreviouslyAdded.Count() > 0 && (PreviouslyAdded.Any(x => x.Info.Name == "Chili Powder") || PreviouslyAdded.Any(x => x.Info.Name == "Cod") || PreviouslyAdded.Last().Info.Category == 1);
 
             case "Worcestershire Sauce":
-                return PreviouslyAdded.Count() == 0 || (PreviouslyAdded.Last().Info.Category == 2 && PreviouslyAdded.First().Info.Category != 1);
+                return PreviouslyAdded.Count() == 0 || (PreviouslyAdded.Last().Info.Category != 2 && PreviouslyAdded.First().Info.Category != 1);
 
             case "Salmon":
                 return !PreviouslyAdded.Any(x => x.Info.Category == 3) && PreviouslyAdded.Any(x => x.Info.Category == 0);
